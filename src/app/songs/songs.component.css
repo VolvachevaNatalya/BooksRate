@@ -1,0 +1,46 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+div {
+  font-family: 'Architects Daughter', cursive;
+}
+
+.rating-title {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+}
+.singer {
+  margin: 10px;
+  background-color: #efe0e0;
+  border-radius: 10px;
+
+}
+.singer img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.name {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+.single {
+  text-align: center;
+}
+
+.rate {
+  text-align: center;
+}
+.bi-hand-thumbs-up {
+  font-size: 22px;
+  color: green;
+}
+.bi-hand-thumbs-down {
+  font-size: 22px;
+  color: red;
+}
+.button-rate {
+  margin-left: 25px;
+}

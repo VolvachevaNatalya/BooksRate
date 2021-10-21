@@ -1,0 +1,27 @@
+<div class="container address">
+  <h3 class="rating-title">Rate the song</h3>
+
+  <div class="button-rate">
+    <button (click)="randomSongsRateStart()" *ngIf="switchRandomRatingFlag"> Random Rating</button>
+    <button (click)="randomSongsRateStop()" *ngIf="!switchRandomRatingFlag">Stop Random Rating</button>
+  </div>
+  <div class="container" style="">
+    <div class="row">
+      <div *ngFor="let song of songs" class="col-md-3 col-sm-4 col-6">
+        <div class="singer">
+          <img src="{{song.coverUrl}}">
+
+          <div [ngStyle]="{ color: song.color }" class="name">{{song.name}}</div>
+          <div class="single"> {{song.single}}</div>
+          <div class="rate">
+            <div class="rating"> Rate me:</div>
+            <i class="bi bi-hand-thumbs-down" (click)="decreaseRatingByOne(song)"></i>
+            <span style=""> {{song.rating}} </span>
+            <i class="bi bi-hand-thumbs-up" (click)="increaseRatingByOne(song)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
